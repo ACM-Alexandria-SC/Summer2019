@@ -1,0 +1,48 @@
+/********************************************************************
+	ZYPOP - HTTPS://ZYPOPWEBTEMPLATES.COM
+	FREE WEB TEMPLATES
+********************************************************************/
+
+
+/**
+This file contains the CSS variables for this template, built on the Bootstrap framework 
+See https://getbootstrap.com/docs/4.0/getting-started/introduction/ for more information
+**/
+
+
+/**
+Font properties
+**/
+$font-family-base: 'Merriweather', Arial, 'sans-serif';
+$line-height-base: 2.2 !default;
+
+/**
+Main colours
+**/
+$primary:       #111 !default;
+$secondary:     #901223 !default;
+$body-color:    #666 !default; 
+
+/**
+Change a few bootstrap defaults
+**/
+
+// The below variables are automatic based on the above values, however you may wish to override them
+$pagination-bg: lighten($primary, 5%);
+$pagination-border-color: lighten($primary, 10%);
+$pagination-hover-bg:  lighten($primary, 15%);
+$pagination-hover-border-color:  lighten($primary, 15%);
+
+$table-border-color: lighten($primary, 15%);
+
+$nav-tabs-border-color: lighten($primary, 15%);
+$nav-tabs-link-hover-border-color:  transparent;
+$nav-tabs-link-active-color:  #fff;
+$nav-tabs-link-active-bg:  $secondary;
+$nav-tabs-link-active-border-color: $secondary;
+    
+
+$component-active-bg: $secondary !default;
+$pagination-active-bg:  $secondary !default;
+$pagination-active-border-color: $secondary !default;
+

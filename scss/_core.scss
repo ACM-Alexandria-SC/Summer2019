@@ -1,0 +1,285 @@
+/********************************************************************
+	ZYPOP - HTTPS://ZYPOPWEBTEMPLATES.COM
+	FREE WEB TEMPLATES
+********************************************************************/
+
+
+/**
+This file contains the core CSS for this template, built on the Bootstrap framework 
+Set the variable values in _variables.scss 
+**/
+
+
+/** 
+Page structure and elements 
+**/
+body { 
+    background-color: $primary;	
+}
+
+.outer-wrapper {
+    width: auto;
+    margin: 0;
+}
+
+.inner-wrapper {
+    padding: $grid-gutter-width / 2;
+}
+
+
+main {
+	padding-top: 1em;
+}
+.text-primary {
+    color: $body-color !important;
+}
+
+a, .page-link {
+    color: lighten($body-color, 40%);
+    font-weight: bold;
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($secondary, 15%);
+    }
+}
+
+fieldset { 
+    margin-bottom: $spacer; 
+    display: block;
+    border-top: 1px solid #ccc;
+}
+fieldset legend { 
+    width: auto;
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+table th { 
+    background-color: $secondary;
+    color: $white;
+	border-color:darken($secondary, 15%) !important;
+	border-bottom: 1px solid darken($secondary, 15%);
+}
+
+blockquote {
+    display: block;
+    border-left: 5px solid lighten($primary, 20%);
+    padding: 0.5rem;
+	color: $body-color;
+    margin-bottom: $spacer;
+
+}
+pre code {
+    color: $code-color;
+}
+
+.btn { 
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #000;
+    border-color: #000;
+}
+.btn-secondary, .badge-secondary {
+    color: $white;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+    color: lighten($body-color, 30%);
+    font-weight: bold;
+}
+
+h3 { 
+    color: lighten($secondary, 10%);
+}
+
+
+/**
+Header 
+**/
+#main-profile-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+#main-profile-image img {
+    height: auto;
+    max-width: 100%;
+}
+header {
+    padding: 4rem 0;
+}
+header h1 {
+	color: $white;
+    font-size: 4.5rem;
+	letter-spacing: -0.1rem;
+}
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: darken($body-color, 5%);
+}
+
+
+/** 
+Navbar 
+**/
+.navbar-toggler {
+	margin: 0.5rem;
+}
+.navbar {
+	padding: 0 ($grid-gutter-width / 2);
+    background-color: darken($primary, 5%);
+    
+}
+.navbar-dark .navbar-brand {
+  	color: $white;  
+    font-size: 2.1em;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white;
+    }
+}
+
+.navbar-dark .navbar-nav .active .nav-link {
+	background-color: $secondary;
+     color: $white;
+    &:hover,
+     &:focus,
+     &:active {
+        background-color: $secondary;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link
+ {
+     color: #999;
+     font-weight: bold;
+     
+    padding: 0.5rem 1.5rem !important;
+     font-size: 0.9rem;
+     &:hover,
+     &:focus,
+     &:active {
+        background-color: darken($primary, 10%);
+    }
+}
+
+/**
+Footer
+**/
+footer { 
+	background-color: $primary;
+    padding: ($grid-gutter-width / 2);
+    color: lighten($primary, 30%);
+	font-size: 0.9rem;
+}
+footer p:last-child {
+    margin-bottom: 0;
+}
+footer  a {
+    color: lighten($primary, 40%);
+    font-weight: normal;
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($primary, 60%);
+    }
+}
+
+/** 
+Social Icons
+**/
+.social-icons {
+   padding: ($grid-gutter-width / 2);
+}
+.social-icons a {
+    margin: 0 20px; 
+    color: lighten($body-color, 20%);
+    font-weight: normal;
+    &:hover,
+    &:focus,
+    &:active {
+        color: lighten($secondary, 5%);
+    }
+}
+
+
+
+/** 
+Articles
+**/
+article {
+	margin-bottom: 2rem;
+	border-bottom: 1px solid lighten($primary, 7%);
+	padding-bottom: 2rem;
+	font-size: 1.2rem;
+}
+
+article h2.article-title {
+	font-size: 3rem;
+	letter-spacing: -1px;
+    font-weight: 400;
+}
+
+article p.article-meta {
+	color: #ccc;
+	font-size: 1rem;
+}
+
+
+
+/** 
+Responsive typography and elements
+**/
+html {
+    font-size: 14px;
+}
+@include media-breakpoint-up(xs) {
+    html {
+        font-size: 10px;
+    }
+}
+@include media-breakpoint-up(sm) {
+    #main-profile-image {
+        height: 450px;
+    }
+}
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 12px;
+    }
+    #main-profile-image {
+        height: auto;
+    }
+    .navbar {
+       padding: 0;
+    }
+    #main-profile-image img {
+        max-width: 50%;
+        height: auto;
+        float: right;
+        position: fixed;
+        right: 0;
+    }
+
+    .outer-wrapper {
+        margin-right: 50%;
+    }
+    .inner-wrapper {
+        padding: $grid-gutter-width;
+    }
+
+}
+@include media-breakpoint-up(lg) {
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 1rem 2.5rem !important;
+    }
+    html {
+        font-size: 14px;
+    }
+}
